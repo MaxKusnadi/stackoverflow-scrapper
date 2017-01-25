@@ -1,6 +1,14 @@
 /bin
 /include
 /lib
+/Include
+/Lib
+/Scripts
+/tcl
 pip-selfcheck.json
 stackoverflow-scrapper.sublime-project
 stackoverflow-scrapper.sublime-workspace
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
