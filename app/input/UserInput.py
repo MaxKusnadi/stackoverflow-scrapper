@@ -23,9 +23,6 @@ class UserInput(object):
 			except ValueError as e:
 				logging.error(e)
 				continue
-			except Exception as e:
-				logging.error(e)
-				continue
 			else:
 				break
 
@@ -40,9 +37,6 @@ class UserInput(object):
 				logging.debug("End year: %s" % (end_year,))
 				is_end_year_validValid = self.is_end_year_valid(end_year, start_year)
 			except ValueError as e:
-				logging.error(e)
-				continue
-			except Exception as e:
 				logging.error(e)
 				continue
 			else:
@@ -84,9 +78,6 @@ class UserInput(object):
 				logging.debug("Input: %s" % (language,))
 				is_input_valid = self.is_language_valid(language)
 			except ValueError as e:
-				logging.error(e)
-				continue
-			except Exception as e:
 				logging.error(e)
 				continue
 			else:

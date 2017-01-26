@@ -15,12 +15,8 @@ class InputTestCase(unittest.TestCase):
 		language = self.userInput.ask_language()
 		self.assertEqual(language, mock_input.return_value)
 
-	@patch('builtins.input')
-	@patch.object(UserInput, "is_language_valid")
-	def test_empty_language_input(self, mock_fn, mock_input):
-		mock_input.side_effect = ["", "ruby"]
-		language = UserInput().ask_language()
-		self.assertEqual(mock_fn.call_count, 2)
+	def test_empty_language_input(self):
+		self.assertRaises(ValueError, self.userInput.is_language_valid, "")
 
 	def test_digit_language_input(self):
 		self.assertRaises(ValueError, self.userInput.is_language_valid, "1234")
