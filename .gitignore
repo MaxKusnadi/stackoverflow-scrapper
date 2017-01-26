@@ -1,6 +1,12 @@
 /bin
 /include
 /lib
+/htmlcov
+
+__pycache__/
+.pyc
+
 pip-selfcheck.json
 stackoverflow-scrapper.sublime-project
 stackoverflow-scrapper.sublime-workspace
+.coverage
